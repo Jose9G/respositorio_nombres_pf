@@ -15,7 +15,7 @@ public class Compra {
             System.out.println("Seleccione un producto de su interes");
             System.out.println("1. Leche");
             System.out.println("2. Carne");
-            System.out.println("3. Agua");
+            System.out.println("3. Gaseosa");
             opcion = sc.nextInt();
             
             switch (opcion) {
@@ -28,7 +28,7 @@ public class Compra {
                     tc += precio;
                 }
                 case 3 -> {
-                    precio = 5;
+                    precio = 8;
                     tc += precio;
                 }
                 default -> {
@@ -45,5 +45,6 @@ public class Compra {
         System.out.println("Total de Compras: " + tc);
         System.out.print("Promedio de compra: ");
         System.out.printf("%.2f\n", pc);
+        System.out.println("Fin del Proceso");
     }
 }
